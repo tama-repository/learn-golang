@@ -1,0 +1,7 @@
+go 1.21.6
+
+use (
+	./learn-golang-basic
+	./learn-golang-std-lib
+  ./learn-golang-unit-test
+)
