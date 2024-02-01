@@ -6,6 +6,10 @@ import (
 	"learn-golang-unit-test/repository"
 )
 
+type ProductServiceInterface interface {
+	GetById(id string) (*entity.Product, error)
+}
+
 type ProductService struct {
 	Repository repository.ProductRepository
 }

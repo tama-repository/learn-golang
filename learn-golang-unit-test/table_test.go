@@ -24,7 +24,7 @@ func TestAll(t *testing.T) {
 		{
 			TestName:  "sayGoodbye Trirahmanto",
 			Parameter: "Trirahmanto",
-			Expected:  "Hello Trirahmanto",
+			Expected:  "Goodbye Trirahmanto",
 			Message:   "Result must be 'Goodbye Trirahmanto'",
 		},
 	}

@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"learn-golang-basic/helper"
-) 
+)
 
 func getUserDetail(user helper.Users) {
 	firstName, lastname, address := user.GetUserDetail()
