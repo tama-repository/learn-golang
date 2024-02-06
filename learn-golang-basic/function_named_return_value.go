@@ -10,7 +10,6 @@ func fullNameFunc() (firstName, middleName, lastName string) {
 	return firstName, middleName, lastName
 }
 
-
 func main() {
 	a, b, c := fullNameFunc()
 	fmt.Println(a, b, c)

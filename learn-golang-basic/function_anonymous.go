@@ -3,8 +3,7 @@ package main
 import (
 	"fmt"
 	"learn-golang-basic/helper"
-) 
-
+)
 
 func getHello(name string, filterFunc helper.Filter) string {
 	result := filterFunc(name)
@@ -13,15 +12,18 @@ func getHello(name string, filterFunc helper.Filter) string {
 }
 
 func main() {
-	fmt.Println(getHello("Trirahmanto", func(name string) string  {
+	getHelloUser := getHello("Trirahmanto", func(name string) string {
 		if name == "Bego" {
 			return "..."
 		}
 
 		return name
-	}))
+	})
 
-	spamFunc := func(name string) string  {
+	fmt.Println(getHelloUser)
+
+	// Anonymous function
+	spamFunc := func(name string) string {
 		if name == "Bego" {
 			return "..."
 		}

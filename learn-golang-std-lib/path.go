@@ -5,7 +5,6 @@ import (
 	"path"
 )
 
-
 func main() {
 
 	pathUrl := "/learn-golang-basic/array.go"

@@ -3,8 +3,7 @@ package main
 import (
 	"fmt"
 	"learn-golang-basic/helper"
-) 
-
+)
 
 func changeFullName(user *helper.NewUser, firstName string, lastName string) {
 	user.FirstName = firstName

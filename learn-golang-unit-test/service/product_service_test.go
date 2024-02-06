@@ -21,9 +21,9 @@ func TestProductServiceGetById(t *testing.T) {
 
 func TestProductService(t *testing.T) {
 	product := entity.Product{
-		Id: "2",
-		Name: "Product-1",
-		Price: "20000",
+		Id:          "2",
+		Name:        "Product-1",
+		Price:       "20000",
 		Description: "This is Product-1",
 	}
 

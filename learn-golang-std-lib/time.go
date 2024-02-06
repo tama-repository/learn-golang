@@ -12,12 +12,12 @@ func main() {
 	fmt.Println(now.Local())
 	fmt.Println(now.Unix())
 
-	date := time.Date(2024, 1, 1, 0,0,0,0, time.UTC)
+	date := time.Date(2024, 1, 1, 0, 0, 0, 0, time.UTC)
 	fmt.Println(date)
 	fmt.Println(date.Local())
 
 	layout := "2006-01-02 15:04:05"
- 
+
 	t, err := time.Parse(layout, "1994-12-19 00:00:00")
 
 	if err != nil {

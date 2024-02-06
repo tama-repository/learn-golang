@@ -7,7 +7,6 @@ import (
 	"strings"
 )
 
-
 func main() {
 	csvData := "name,age\nJohn,30\nJane,25\nBob,40"
 

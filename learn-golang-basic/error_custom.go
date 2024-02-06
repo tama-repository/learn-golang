@@ -31,26 +31,26 @@ func saveData(id string) error {
 
 func main() {
 
-	result := saveData("id")
+	result := saveData("")
 
 	if result != nil {
 
-			switch err := result.(type) {
-			case *ValidationCheck:
-				fmt.Println("Error validation :", err.Message)
-			case *NotFoundCheck:
-				fmt.Println("Error not found :", err.Message)
-			default:
-				fmt.Println("Error unknown :", err.Error())
-			}
+		switch err := result.(type) {
+		case *ValidationCheck:
+			fmt.Println("Error validation :", err.Message)
+		case *NotFoundCheck:
+			fmt.Println("Error not found :", err.Message)
+		default:
+			fmt.Println("Error unknown :", err.Error())
+		}
 
-			// if validationErr, isError := err.(*ValidationCheck); isError {
-			// 	fmt.Println("Error validation :", validationErr.Message)
-			// } else if notFoundErr, isError := err.(*NotFoundCheck); isError {
-			// 	fmt.Println("Error not found :", notFoundErr.Message)
-			// } else {
-			// 	fmt.Println("Unknown error :", err.Error())
-			// }
+		// if validationErr, isError := err.(*ValidationCheck); isError {
+		// 	fmt.Println("Error validation :", validationErr.Message)
+		// } else if notFoundErr, isError := err.(*NotFoundCheck); isError {
+		// 	fmt.Println("Error not found :", notFoundErr.Message)
+		// } else {
+		// 	fmt.Println("Unknown error :", err.Error())
+		// }
 	}
 
 }

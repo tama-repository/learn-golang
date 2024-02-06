@@ -6,7 +6,6 @@ import (
 	"os"
 )
 
-
 func createFile(name string, message string) error {
 	file, err := os.OpenFile(name, os.O_CREATE|os.O_WRONLY, 0666)
 	if err != nil {

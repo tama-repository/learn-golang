@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"learn-golang-basic/helper"
-) 
+)
 
 func main() {
 	// result := typeAssert()
@@ -24,6 +24,5 @@ func main() {
 	default:
 		fmt.Println("Unknown", value)
 	}
-
 
 }

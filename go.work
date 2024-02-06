@@ -3,6 +3,7 @@ go 1.21.6
 use (
 	./learn-golang-basic
 	./learn-golang-goroutine
+	./learn-golang-leetcode
 	./learn-golang-std-lib
 	./learn-golang-unit-test
 )

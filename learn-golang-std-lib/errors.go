@@ -7,7 +7,7 @@ import (
 
 var (
 	validationError = errors.New("Validation error")
-	notFoundError = errors.New("Not found error")
+	notFoundError   = errors.New("Not found error")
 )
 
 func validationUser(userId string) error {
@@ -17,6 +17,8 @@ func validationUser(userId string) error {
 	if userId != "id" {
 		return notFoundError
 	}
+
+	//success
 	return nil
 }
 
@@ -25,7 +27,7 @@ func main() {
 	err := validationUser("")
 
 	if err != nil {
-		if errors.Is(err,validationError) {
+		if errors.Is(err, validationError) {
 			fmt.Println("Error occurred :", err.Error())
 		} else if errors.Is(err, notFoundError) {
 			fmt.Println("Error occurred :", err.Error())

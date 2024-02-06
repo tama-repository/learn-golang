@@ -5,7 +5,6 @@ import (
 	"strings"
 )
 
-
 func main() {
 
 	name := "Hutama Trirahmanto"

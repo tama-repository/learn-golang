@@ -5,10 +5,9 @@ import (
 	"sort"
 )
 
-
 type User struct {
 	Name string
-	Age int
+	Age  int
 }
 
 type UserSlice []User
@@ -38,7 +37,5 @@ func main() {
 	sort.Sort(UserSlice(user))
 
 	fmt.Println(user)
-
-
 
 }

@@ -7,7 +7,6 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-
 func TestSkip(t *testing.T) {
 	if runtime.GOOS == "linux" {
 		t.Skip("Cant run test on linux")

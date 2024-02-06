@@ -15,7 +15,7 @@ func main() {
 		dataRing = dataRing.Next()
 	}
 
-	dataRing.Do(func(data any)  {
+	dataRing.Do(func(data any) {
 		fmt.Println(data)
 	})
 

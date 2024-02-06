@@ -5,7 +5,6 @@ import (
 	"fmt"
 )
 
-
 func main() {
 
 	var host *string = flag.String("host", "localhost", "Host database")

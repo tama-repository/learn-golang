@@ -6,7 +6,6 @@ import (
 	"strconv"
 )
 
-
 func main() {
 
 	resultBool, err := strconv.ParseBool("true") // only convert "true" / "false" to boolean
@@ -26,6 +25,8 @@ func main() {
 	}
 
 	resultStr := strconv.Itoa(1000)
-
 	fmt.Println(resultStr, reflect.TypeOf(resultStr))
+
+	formatBool := strconv.FormatBool(true)
+	fmt.Println(formatBool, reflect.TypeOf(formatBool))
 }

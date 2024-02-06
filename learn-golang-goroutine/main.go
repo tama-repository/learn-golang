@@ -2,9 +2,7 @@ package main
 
 import "fmt"
 
-
-
-func MultiplyNum(num1, num2 int, channel chan <- int) {
+func MultiplyNum(num1, num2 int, channel chan<- int) {
 	result := num1 * num1
 	channel <- result
 }

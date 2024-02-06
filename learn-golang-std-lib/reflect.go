@@ -7,8 +7,8 @@ import (
 
 type Student struct {
 	FirstName string `firstname:"Tama" isHuman:"true" required:"true"` // Struct Tag
-	LastName string `firstname:"Tama" isHuman:"true"`
-	Grade int `firstname:"Tama" isHuman:"true" required:"true"`
+	LastName  string `firstname:"Tama" isHuman:"true"`
+	Grade     int    `firstname:"Tama" isHuman:"true" required:"true"`
 }
 
 func (s *Student) GetPropertyInfo() {
@@ -35,7 +35,7 @@ func isValid(data any) (result bool) {
 	result = true
 	var typesData reflect.Type = reflect.TypeOf(data)
 	for i := 0; i < typesData.NumField(); i++ {
-	var requiredTag = typesData.Field(i).Tag.Get("required")
+		var requiredTag = typesData.Field(i).Tag.Get("required")
 		if requiredTag == "true" {
 			data := reflect.ValueOf(data).Field(i).Interface()
 			result = data != ""
@@ -48,21 +48,20 @@ func isValid(data any) (result bool) {
 	return result
 }
 
-
 func main() {
 
 	student1 := &Student{
 		FirstName: "Hutama",
-		LastName: "Trirahmanto",
-		Grade: 10,
+		LastName:  "Trirahmanto",
+		Grade:     10,
 	}
 
 	student1.GetPropertyInfo()
 
 	student2 := Student{
 		FirstName: "Hutama",
-		LastName: "",
-		Grade: 10,
+		LastName:  "",
+		Grade:     10,
 	}
 
 	fmt.Println(isValid(student2))

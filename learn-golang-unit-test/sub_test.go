@@ -6,7 +6,6 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-
 func TestSubTest(t *testing.T) {
 	t.Run("Sum Test", func(t *testing.T) {
 		result := sumNumber(10, 30)

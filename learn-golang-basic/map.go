@@ -2,25 +2,24 @@ package main
 
 import "fmt"
 
-
 func main() {
-people := make(map[string]string)
-people["name"] = "Hutama Trirahmanto"
-people["address"] = "Tangerang"
+	people := make(map[string]string)
+	people["name"] = "Hutama Trirahmanto"
+	people["address"] = "Tangerang"
 
-fmt.Println(people)
+	fmt.Println(people)
 
-car := map[string]string {
-	"type": "sedan",
-	"color": "red",
-	"seat": "4",
-}
+	car := map[string]string{
+		"type":  "sedan",
+		"color": "red",
+		"seat":  "4",
+	}
 
-fmt.Println(car)
-fmt.Println(car["type"])
-fmt.Println(len(car))
+	fmt.Println(car)
+	fmt.Println(car["type"])
+	fmt.Println(len(car))
 
-delete(car,"seat" )
+	delete(car, "seat")
 
-  fmt.Println(car)
+	fmt.Println(car)
 }

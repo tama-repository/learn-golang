@@ -8,7 +8,6 @@ import (
 	"strings"
 )
 
-
 func main() {
 
 	reader := strings.NewReader("Hallo, Joko\ntest test")

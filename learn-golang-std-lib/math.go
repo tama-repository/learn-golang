@@ -6,16 +6,15 @@ import (
 )
 
 func PowersOfTwo(n int) []uint64 {
-  // your code goes here
-  var result []uint64
+	// your code goes here
+	var result []uint64
 
-  for i := 0; i <= n; i++ {
-    result = append(result, uint64(math.Pow(float64(2), float64(i))))
-  }
+	for i := 0; i <= n; i++ {
+		result = append(result, uint64(math.Pow(float64(2), float64(i))))
+	}
 
-  return result
+	return result
 }
-
 
 func main() {
 	fmt.Println(math.Floor(5.7))

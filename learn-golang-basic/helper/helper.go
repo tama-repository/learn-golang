@@ -8,13 +8,13 @@ func TypeAssert() any {
 
 type NewUser struct {
 	FirstName, LastName string
-	Age int
+	Age                 int
 }
 
 type Filter func(string) string
 
 type Human struct {
-	Name string
+	Name    string
 	Address string
 }
 
@@ -30,8 +30,8 @@ type Users interface {
 
 type Customer struct {
 	FirstName string
-	LastName string
-	Address string
+	LastName  string
+	Address   string
 }
 
 func (customer Customer) GetUserDetail() (string, string, string) {
@@ -40,9 +40,9 @@ func (customer Customer) GetUserDetail() (string, string, string) {
 
 type User struct {
 	FirstName, LastName, City, Address, PhoneNumber string
-	Age int
+	Age                                             int
 }
 
- func (user User) GetUserData() {
+func (user User) GetUserData() {
 	fmt.Println(user.FirstName, user.LastName, user.Age, "Address", user.Address, "City", user.City, "PhoneNumber", user.PhoneNumber)
 }

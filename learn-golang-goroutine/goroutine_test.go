@@ -6,14 +6,13 @@ import (
 	"time"
 )
 
-
 func TestGoroutineMul(t *testing.T) {
 
 	channel := make(chan int)
 	go MultiplyNum(10, 10, channel)
 	fmt.Println("Running")
 
-	result := <- channel
+	result := <-channel
 	fmt.Println(result)
 
 	time.Sleep(1 * time.Second)

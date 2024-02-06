@@ -14,4 +14,3 @@ func main() {
 
 	fmt.Println(regex.FindAllString("htama hutama huyama huTAma", 5))
 }
-

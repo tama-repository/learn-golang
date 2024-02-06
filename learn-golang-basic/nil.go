@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-) 
+)
 
 func getUserName(name string) map[string]string {
 	if name == "" {
