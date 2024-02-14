@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 type Filter func(string) string
 
@@ -16,7 +19,7 @@ func sayHello(name string, filterFunc Filter) string {
 	return "Hello " + nameFiltered
 }
 
-func main() {
+func TestFuncAsParams(t *testing.T) {
 	fmt.Println(sayHello("Bego", spamFilter))
 	fmt.Println(sayHello("Hutama", spamFilter))
 }

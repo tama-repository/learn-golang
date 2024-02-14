@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"learn-golang-basic/helper"
+	"testing"
 )
 
 func getHello(name string, filterFunc helper.Filter) string {
@@ -11,12 +12,11 @@ func getHello(name string, filterFunc helper.Filter) string {
 	return "Hello " + result
 }
 
-func main() {
+func TestFuncAnonymous(t *testing.T) {
 	getHelloUser := getHello("Trirahmanto", func(name string) string {
 		if name == "Bego" {
 			return "..."
 		}
-
 		return name
 	})
 

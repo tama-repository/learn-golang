@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 func factorialRecursive(number int) int {
 	if number == 10 {
@@ -9,6 +12,6 @@ func factorialRecursive(number int) int {
 	return number * factorialRecursive(number+1)
 }
 
-func main() {
+func TestFuncRecursive(t *testing.T) {
 	fmt.Println(factorialRecursive(1))
 }

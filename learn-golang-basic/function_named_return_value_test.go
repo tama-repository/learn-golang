@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 func fullNameFunc() (firstName, middleName, lastName string) {
 	firstName = "Hutama"
@@ -10,7 +13,7 @@ func fullNameFunc() (firstName, middleName, lastName string) {
 	return firstName, middleName, lastName
 }
 
-func main() {
+func TestFuncReturnNameVal(t *testing.T) {
 	a, b, c := fullNameFunc()
 	fmt.Println(a, b, c)
 }

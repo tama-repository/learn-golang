@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"fmt"
 	"io"
 	"os"
 )
@@ -50,13 +51,13 @@ func addToFile(name string, message string) error {
 func main() {
 	// createFile("file_sample.go", "package main\nimport \"fmt\"\nfunc main() {\nfmt.Println(\"Hello\")\n}")
 
-	// file, err := readFile("file_sample.go")
+	file, err := readFile("file_sample.go")
 
-	// if err != nil {
-	// 	fmt.Println(err.Error())
-	// } else {
-	// 	fmt.Println(file)
-	// }
+	if err != nil {
+		fmt.Println(err.Error())
+	} else {
+		fmt.Println(file)
+	}
 
-	addToFile("file_sample.go", "\n func SayHello() {\n fmt.Println(\"Hello\")\n}")
+	// addToFile("file_sample.go", "\n func SayHello() {\n fmt.Println(\"Hello\")\n}")
 }

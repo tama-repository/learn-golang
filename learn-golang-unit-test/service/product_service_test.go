@@ -19,7 +19,15 @@ func TestProductServiceGetById(t *testing.T) {
 	assert.NotNil(t, err)
 }
 
-func TestProductService(t *testing.T) {
+// func TestProductServiceGetAll(t *testing.T) {
+// 	productRepository.Mock.On("FindAll", "").Return(nil)
+
+// 	products, err := productService.GetAll("")
+// 	assert.Nil(t, products)
+// 	assert.NotNil(t, err)
+// }
+
+func TestProductServiceFindById(t *testing.T) {
 	product := entity.Product{
 		Id:          "2",
 		Name:        "Product-1",
@@ -36,3 +44,25 @@ func TestProductService(t *testing.T) {
 	assert.Equal(t, product.Price, p.Price)
 	assert.Equal(t, product.Description, p.Description)
 }
+
+// func TestProductServiceFindAll(t *testing.T) {
+// 	products := []*entity.Product{
+// 		{
+// 			Id:          "1",
+// 			Name:        "Product-1",
+// 			Price:       "20000",
+// 			Description: "This is Product-1",
+// 		},
+// 		{
+// 			Id:          "2",
+// 			Name:        "Product-2",
+// 			Price:       "20000",
+// 			Description: "This is Product-2",
+// 		},
+// 	}
+
+// 	productRepository.Mock.On("FindAll", "").Return(products)
+// 	p, err := productService.GetAll("")
+// 	assert.Nil(t, err)
+// 	assert.NotNil(t, p)
+// }

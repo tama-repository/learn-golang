@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestAugmentedAssignment(t *testing.T) {
 	num1 := 10
 	num2 := 20
 

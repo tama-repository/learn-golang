@@ -13,10 +13,18 @@ type ProductRepositoryMock struct {
 func (repository *ProductRepositoryMock) FindById(id string) *entity.Product {
 	args := repository.Mock.Called(id)
 
-	if args.Get(0) == nil {
-		return nil
-	} else {
-		product := args.Get(0).(entity.Product)
+	if product, ok := args.Get(0).(entity.Product); ok {
 		return &product
 	}
+	return nil
 }
+
+// func (repository *ProductRepositoryMock) FindAll(url string) []*entity.Product {
+// 	args := repository.Mock.Called(url)
+
+// 	if products, ok := args.Get(0).([]*entity.Product); ok {
+// 		return products
+// 	}
+
+// 	return nil
+// }

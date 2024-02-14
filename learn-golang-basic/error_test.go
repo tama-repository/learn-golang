@@ -3,6 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
+	"testing"
 )
 
 type UserStruct struct {
@@ -23,7 +24,7 @@ func (userData *UserData) SaveUserData(data UserStruct) ([]UserStruct, error) {
 	}
 }
 
-func main() {
+func TestError(t *testing.T) {
 
 	newUserData1 := UserStruct{FirstName: "Joko", LastName: "Prasetyo", Age: 30}
 	newUserData2 := UserStruct{FirstName: "Hutama", LastName: "Trirahmanto", Age: 29}

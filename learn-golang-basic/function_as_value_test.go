@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestFuncAsValue(t *testing.T) {
 	multiply := multiplyAll
 	numList := []int{10, 10, 10, 10}
 

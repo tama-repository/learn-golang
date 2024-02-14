@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestConversion(t *testing.T) {
 	var fullName string = "Hutama Trirahmanto"
 	var indexVal uint8 = fullName[0]
 	var indexValStr string = string(indexVal)

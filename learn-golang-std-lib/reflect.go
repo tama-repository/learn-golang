@@ -37,8 +37,8 @@ func isValid(data any) (result bool) {
 	for i := 0; i < typesData.NumField(); i++ {
 		var requiredTag = typesData.Field(i).Tag.Get("required")
 		if requiredTag == "true" {
-			data := reflect.ValueOf(data).Field(i).Interface()
-			result = data != ""
+			value := reflect.ValueOf(data).Field(i).Interface()
+			result = value != ""
 			if result == false {
 				return result
 			}

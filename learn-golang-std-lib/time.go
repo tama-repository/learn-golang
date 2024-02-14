@@ -26,4 +26,10 @@ func main() {
 		fmt.Println(t)
 	}
 
+	fmt.Println(t.Year())
+	fmt.Println(t.Month())
+	fmt.Println(t.Day())
+	fmt.Println(t.Hour())
+	fmt.Println(t.Second())
+
 }

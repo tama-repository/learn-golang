@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestArray(t *testing.T) {
 	var names [2]string
 	names[0] = "Hutama"
 	names[1] = "Trirahmanto"

@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestForRange(t *testing.T) {
 	games := []string{"Zelda BOTW", "Zelda TOTK", "Pokemon Sword", "Pokemon Shield"}
 
 	for _, value := range games {

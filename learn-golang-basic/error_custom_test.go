@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 type ValidationCheck struct {
 	Message string
@@ -29,8 +32,7 @@ func saveData(id string) error {
 	return nil
 }
 
-func main() {
-
+func TestErrCustom(t *testing.T) {
 	result := saveData("")
 
 	if result != nil {
@@ -52,5 +54,4 @@ func main() {
 		// 	fmt.Println("Unknown error :", err.Error())
 		// }
 	}
-
 }

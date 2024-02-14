@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestBreakContinue(t *testing.T) {
 	for i := 1; i < 10; i++ {
 		if i == 7 {
 			break

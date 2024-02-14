@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestComparison(t *testing.T) {
 	num1 := 50
 	num2 := 60
 

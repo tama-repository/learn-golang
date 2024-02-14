@@ -8,6 +8,7 @@ import (
 
 type ProductServiceInterface interface {
 	GetById(id string) (*entity.Product, error)
+	// GetAll(url string) ([]*entity.Product, error)
 }
 
 type ProductService struct {
@@ -23,3 +24,13 @@ func (service *ProductService) GetById(id string) (*entity.Product, error) {
 		return product, nil
 	}
 }
+
+// func (service *ProductService) GetAll(url string) ([]*entity.Product, error) {
+// 	products := service.Repository.FindAll(url)
+
+// 	if products == nil {
+// 		return nil, errors.New("products not found")
+// 	} else {
+// 		return products, nil
+// 	}
+// }

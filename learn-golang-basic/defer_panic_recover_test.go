@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 func finishedFunc() {
 	fmt.Println("Finished")
@@ -35,7 +38,7 @@ func newUser(name string, isError bool) string {
 	}
 }
 
-func main() {
+func TestDeferPanicRecover(t *testing.T) {
 	fmt.Println(newUser("Hutama", false))
 	fmt.Println(newUser("Riu", true))
 	fmt.Println("Func Finished")

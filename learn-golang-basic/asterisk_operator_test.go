@@ -3,9 +3,10 @@ package main
 import (
 	"fmt"
 	"learn-golang-basic/helper"
+	"testing"
 )
 
-func main() {
+func TestAsteriskOperator(t *testing.T) {
 	var user1 helper.NewUser = helper.NewUser{FirstName: "Hutama", LastName: "Trirahmanto", Age: 29}
 	var user2 *helper.NewUser = &user1 // references from user 1 (pass by references)
 	var user3 *helper.NewUser = &user1
