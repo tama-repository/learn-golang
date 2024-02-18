@@ -7,7 +7,7 @@ import (
 	"testing"
 )
 
-func TestExecSQL(t *testing.T) {
+func TestExecContextSQL(t *testing.T) {
 	db := ConnectionDB()
 	ctx := context.Background()
 	ctxC, cancel := context.WithCancel(ctx)
