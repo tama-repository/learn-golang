@@ -8,4 +8,5 @@ use (
 	./learn-golang-unit-test
   ./learn-golang-context
   ./learn-golang-database
+  ./learn-golang-embed
 )

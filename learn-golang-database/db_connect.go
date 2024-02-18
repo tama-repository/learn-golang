@@ -10,7 +10,7 @@ import (
 )
 
 func ConnectionDB() *sql.DB {
-	db, err := sql.Open("mysql", "root:Rahmanto123!@tcp(localhost:3306)/learn_golang_database")
+	db, err := sql.Open("mysql", "root:Rahmanto123!@tcp(localhost:3306)/learn_golang_database?parseTime=true")
 
 	if err != nil {
 		fmt.Println(errors.New(err.Error()))
