@@ -2,12 +2,13 @@ go 1.22.0
 
 use (
 	./learn-golang-basic
+	./learn-golang-context
+	./learn-golang-database
+	./learn-golang-embed
 	./learn-golang-goroutine
 	./learn-golang-leetcode
 	./learn-golang-std-lib
+	./learn-golang-todolist
 	./learn-golang-unit-test
-  ./learn-golang-context
-  ./learn-golang-database
-  ./learn-golang-embed
-  ./learn-golang-web
+	./learn-golang-web
 )
