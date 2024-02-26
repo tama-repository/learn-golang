@@ -12,4 +12,5 @@ use (
 	./learn-golang-unit-test
 	./learn-golang-web
   ./learn-golang-httprouter
+  ./learn-golang-json
 )
